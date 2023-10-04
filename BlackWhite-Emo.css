@@ -1,0 +1,906 @@
+/* ## ------------------------------------------------------- GENERAL ------------------------------------------------------- ## */
+
+@import url('https://fonts.googleapis.com/css2?family=Revalia&family=Yuji+Boku&display=swap');@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+:root{
+    --font1: 'Yuji Boku', serif;
+    --font2: 'Revalia', cursive;
+    --body-bg: #000000;
+    --main-bg: #000000ad;
+    --border: 2px ridge #A6A6A6;
+    --border2: 2px solid #A6A6A6;
+    --border3: 2px ridge #A6A6A6;
+    --border4: 2px solid ##A6A6A6;
+    --border-h1: 4px ridge #595959;
+    --border-dash: 2px dashed #595959; 
+    --border-dash2: 2px dashed #595959;
+    --box-bg:#000000ad;
+    --box-border:2px ridge #A6A6A6;
+    --btn: #000000;
+    --btn-hover: #A6A6A6;
+    --btn-text: #A6A6A6;
+    --btn-text-hover: #000000;
+    --btn-report:#D90000;
+    --btn-report-hover: #ffffff;
+    --btn-report-text: #ffffff;
+    --btn-report-text-hover: #D90000;
+    --btn-report-border: #ffffff;
+    --btn-report-border-hover: #d90000;
+    --link: #A6A6A6;
+    --link-hover: #FFFFFF;
+    --link-active: #404040;
+    --link2: #ffffff;
+    --link2-hover: #595959;
+    --link3: #719ED9;
+    --link3-hover: #FFFFFF;
+    --alert-bg: #000000;
+    --alert: #ffffff;
+    --alert-link: #A6A6A6;
+    --alert-link-hover: #595959;
+    --bookmark: #D90000;
+    --h1: #A6A6A6;
+    --main-h1: #A6A6A6;
+    --h2: #A6A6A6;
+    --sidebar-h3: #ffffff;
+    --sidebar-h4: #ffffff;
+    --text: #ffffff;
+    --text-shadow1: #0D0D0D;
+    --text-shadow2: #262626;
+    --text-shadow3: #404040;
+    --text-shadow4: #595959;
+    --navstat-text:#0D0D0D;
+    --warning: yellow;
+    --scrolltrack: #000000;
+    --scrollthumb: #ffffff;
+    --nav-main: #A6A6A6;
+    --nav-main-hover: #595959;
+    --icon: #A6A6A6;
+    --icon-hover: #595959;
+    --nav-status: #A6A6A6;
+    --user: #ffffff;
+    --user-hover: #ffffff;
+    --nav-link: #ffffff;
+    --nav-link-hover:#ffffff;
+    --breadcrumb:#FFFFFF;
+    --navstat:#0D0D0D;
+    --navstat-hover: #404040;
+    --dropdown-bg:#A6A6A6;
+    --nav-bg: #000000;
+    --sidebar-bg:#000000ad;
+    --main-bg2:#000000ad; 
+    --sidebar-card-bg: #000000;
+    --chat-bg1: #0D0D0D;
+    --chat-bg2: #404040;
+    --chat-bg3: #262626;
+    --chat-text: #ffffff;
+    --chat-link: #A6A6A6;
+    --chat-link-hover:#595959;
+    --chat-user: #8C8C8C;
+    --chat-user-hover: #CCCCCC;
+    --chat-time: #8C8C8C;
+    --main-h1-bg:#000000;
+    --navtab: #0D0D0D;
+    --navtab-hover: #ffffff;
+    --navtab-active: #595959;
+    --navtab-text: #ffffff;
+    --navtab-text-hover: #0D0D0D;
+    --navtab-text-active: #ffffff;
+    --table-bg1: #262626;
+    --table-bg2: #0D0D0D;
+    --table-text: #A6A6A6;
+    --progress1: #262626;
+    --progress2: #404040;
+    --progress3: #595959;
+    --progress4: #A6A6A6;
+    --progressbg: #ffffff;
+    --progressborder: #ffffff;
+    --white: #FFFFFF;
+    --danger: #D90000;
+    --dark: #16161d;
+    --pink: pink;
+    --yellow: yellow;
+    --orange: orange;
+    --purple: purple;
+}
+
+
+body /* Background Image, font family, font color */ {
+    background: url('https://cdn.discordapp.com/attachments/812514168611405824/1058105279771848714/peakpx.jpg') center fixed !important;
+    background-color: var(--body-bg);
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    font-family: var(--font2);
+    color: var(--text);
+}
+
+
+a /* Links on entire page */ {
+    color: var(--link);
+}
+
+a:hover /* Hover of links on entire page */ {
+    background: transparent !important;
+    color: var(--link-hover);
+    text-decoration:underline;
+}
+
+.alert /* Alerts and notifications that appear at the top of the page. */ {
+    background: var(--alert-bg);
+    border: var(--border3);
+    border-radius: 0px;
+    color: var(--alert);
+} 
+ 
+.alert a { color: var(--alert-link);}
+.alert a:hover { color: var(--alert-link-hover);}
+
+.right a /* Separate alert links if desired */ {
+    color: var(--link2) !important;
+}
+
+.right a:hover /* Separate alert links if desired */ {
+    color: var(--link2-hover) !important;
+}
+
+.breadcrumb a /* Separate alert links if desired */ {
+    color: var(--link2) !important;
+    font-weight:bold;
+}
+
+.breadcrumb a:hover /* Separate alert links if desired */ {
+    color: var(--link2-hover) !important;
+    font-weight:bold;
+    background:transparent !important;
+}
+
+.bx a /* Separate alert links if desired */ {
+    color: var(--link3) !important;
+    font-weight:bold;
+}
+
+.bx a:hover /* Separate alert links if desired */ {
+    color: var(--link3-hover) !important;
+    font-weight:bold;
+    background:transparent !important;
+}
+
+* /*change*/ {
+cursor: url('https://cdn.discordapp.com/attachments/812514168611405824/1058137975432695838/hol338.png') 25 25, default !important;
+}
+
+ul {
+     list-style-image: url('https://cdn.discordapp.com/attachments/812514168611405824/1058139196121960478/kisspng-c-d-guadalajara-drawing-chivas-usa-chivas-regal-emo-5b307f977a0dd3.3996708815299050474999_3.png');
+    color: var(--text);
+}
+/* ## ------------------------------------------------------- REPORT, UPDATE/SAVE, BOOKMARK ------------------------------------------------------- ## */
+
+.btn-danger /* Report button */ {
+    background-color: var(--btn-report);
+    opacity: 0.6;
+    color: var(--btn-report-text);
+    border-radius: 0px;
+    border: 2px solid var(--btn-report-border);
+    font-weight: bold;
+    font-size:10px;
+}
+
+.btn-danger:hover {
+    background-color: var(--btn-report-hover);
+    color: var(--btn-report-text-hover);
+    border-radius: 0px;
+    border: 2px solid var(--btn-report-border-hover);
+    font-weight: bold;
+    opacity:1;
+    font-size:14px;
+}
+
+
+.btn-primary, .btn-success, .btn-info /* Update/Save buttons on entire page */ {
+    background-color: var(--btn) !important;
+    color: var(--btn-text) !important;
+    border-radius: 0px;
+    border: var(--border) !important;
+}
+
+.btn-primary:hover, .btn-success:hover, .btn-info:hover /* Hover of the above */ {
+    background-color: var(--btn-hover) !important;
+    color: var(--btn-text-hover) !important;
+    border-radius: 0px;
+    border: var(--border) !important;
+}
+
+#bookmarkPage.fas.fa-bookmark.text-danger /* Bookmark Icon */ {
+    color: var(--bookmark) !important;
+}
+spoiler {
+	display: none;
+	margin-bottom: 0.5em;
+}
+
+spoiler.show {
+	display: block;
+}
+
+.btn-spoiler {
+    display: block;
+    background-color: var(--btn) !important;
+    color: var(--btn-text) !important;
+    border-radius: 0px;
+    border: var(--border) !important;
+    margin-bottom:  0.5em;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    width:100%;
+}
+
+.btn-spoiler:hover {
+    display: block;
+    background-color: var(--btn-hover) !important;
+    color: var(--btn-text-hover) !important;
+    border-radius: 0px;
+    border: var(--border) !important;
+    margin-bottom:  0.5em;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    width:  100%;
+}
+
+/* ## ------------------------------------------------------- BOXES ------------------------------------------------------- ## */
+
+/*------CSS section by #202------*/
+
+.bx{height:220px;position:relative;margin-top:20px}.bx::after{content:'html by #202';position:absolute;right:0;top:-15px;color:lightgray;transition:.5s ease;padding-right:4px;border-right:1px solid lightgray;font:9px Calibri!important;}.bx:hover::after{border-right:10px solid lightgray;color:gray;text-shadow:0px 0px 5px rgba(0, 0, 0, .5);}.bghack{z-index:0}.bghack img{width:100%;height:220px;object-fit:cover}.tbcont{z-index:9;height:100%}.bghack,.tbcont{width:100%;left:0;top:0;position:absolute}.quot{line-height:30px;position:absolute;z-index:1;bottom:5px;right:5px;font-weight:200;font-size:30px;color:#fff;font-family: 'Great Vibes', cursive!important;}.tb{overflow:hidden}.tb:first-of-type{margin-left:35px}.hdr{padding:10px 5px;writing-mode:vertical-lr;color:#fff;font-weight:700;letter-spacing:1px;font-size:15px!important}.tb,.hdr{width:30px;height:100%}.cntnt{width:0;height:100%;opacity:0;padding:15px 0;background:#16161dad !important;line-height:18px;overflow-x:hidden!important;font-size:12px;color:#fff}.cntnt img{max-width:100%}.cntnt::-webkit-scrollbar{width:6px}.cntnt::-webkit-scrollbar-thumb{background:lightgray}.tb,.hdr,.cntnt{float:left;transition:.9s ease}.tb:hover{width:280px}.tb:hover .cntnt{padding:15px 20px;width:250px;opacity:1;overflow:auto}
+
+.capt {
+    padding:10px 12px;
+    border:1px solid #000;
+    line-height:13px;
+    border-radius:10px;
+    position: relative;
+    text-align: center;
+    min-width:100px;
+} .capt a {
+    color:white!important;
+    font-weight:bold!important;
+} .capt p {
+    margin:5px 0px;
+} .capt p:last-child {
+    margin-bottom: 0px;
+} .capt p:first-child {
+    margin-top:0px;
+} .capt::after {
+    content:"";
+    display:block;
+} .capt::before {
+    content:'html by #202';
+    font: bold 9px Calibri!important;
+    color:white!important;
+} .capt::after, .capt::before {
+    position: absolute;
+}
+
+@media only screen and (min-width: 992px) {
+    
+    .float {
+        position:fixed!important;
+        z-index: 999;
+    } .note-editor .float {
+        display: none!important;
+    } 
+    
+    .float.bl, .float.tl {
+        left:10px;
+    } .float.br,.float.tr {
+        right:10px;
+    } .float.bl, .float.br {
+        bottom:10px;
+    } .float.tl, .float.tr {
+        top:10px;
+    }
+    
+    .float.bl.ani, .float.br.ani {
+        animation: floatb 5.5s infinite;
+    } .float.tl.ani, .float.tr.ani {
+        animation: floatt 5.5s infinite;
+    }
+    
+    @keyframes floatb {
+        0% {bottom:30px;}
+        50% {bottom:10px;}
+        100% {bottom:30px;}
+    } @keyframes floatt {
+        0% {top:10px;}
+        50% {top:30px;}
+        100% {top:10px;}
+    }
+    
+    .capt {
+        max-width:250px;
+        display: inline-block;
+        transition: 0.5s ease;
+        opacity:0;
+    } .float.br .capt, .float.tr .capt {
+        float:left;
+    } .float.bl .capt, .float.tl .capt {
+        float:right;
+    } 
+    
+    .float:hover .capt {
+        opacity:1;
+    } .float.br:hover .capt, .float.tr:hover .capt {
+        margin-right:10px;
+    } .float.bl:hover .capt, .float.tl:hover .capt {
+        margin-left:10px;
+    }
+    
+    .float.bl .capt::after, .float.tl .capt::after, .float.br .capt::after, .float.tr .capt::after {
+        bottom:-11px;
+        border-bottom:10px solid transparent;
+    }
+    
+    .float.bl .capt::after, .float.tl .capt::after {
+        border-left:10px solid #fff;
+        border-left-color:inherit!important;
+        left:10px;
+    } .float.br .capt::after, .float.tr .capt::after {
+        border-right:10px solid #fff;
+        border-right-color:inherit!important;
+        right:10px;
+    } .float.bl .capt::before, .float.tl .capt::before {
+        bottom:-12px;
+        right:0px;
+    } .float.br .capt::before, .float.tr .capt::before {
+        bottom:-12px;
+        left:0px;
+    }
+}
+ 
+img.raven {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+/*------CSS section by #202------*/
+.box {
+    background: var(--box-bg);
+     border: var(--box-border);
+	text-align: center;
+	padding: 15px;
+	margin: 0 2% 30px;
+	border-radius: 0px;
+	float: left;
+	width: 46%;
+	height: 310px;
+	overflow: hidden;
+}
+
+.box2  {
+    background: var(--box-bg);
+     border: var(--box-border);
+	text-align: center;
+	padding: 15px;
+	margin: 0 2% 30px;
+	border-radius: 0px;
+	float: right;
+	width: 46%;
+	height: 310px;
+	overflow: hidden;
+}
+
+.box3  {
+    background: var(--box-bg);
+     border: var(--box-border);
+	text-align: center;
+	padding: 15px;
+	margin: 0 2% 30px;
+	border-radius: 0px;
+	float: left;
+	width: 96%;
+	height: 510px;
+	overflow: hidden;
+}
+
+.box4  {
+    background: var(--box-bg);
+     border: var(--box-border);
+	text-align: center;
+	padding: 15px;
+	margin: 0 2% 30px;
+	border-radius: 0px;
+	float: left;
+	width: 96%;
+	height: 450px;
+	overflow: hidden;
+}
+
+.box5  {
+   background: var(--box-bg);
+     border: var(--box-border);
+	text-align: center;
+	padding: 15px;
+	margin: 0 2% 30px;
+	border-radius: 0px;
+	float: left;
+	width: 96%;
+	height: 200px;
+	overflow: stretch;
+}
+
+.box6 {
+    background: var(--box-bg);
+     border: var(--box-border);
+	text-align: center;
+	padding: 15px;
+	margin: 0 2% 30px;
+	border-radius: 0px;
+	float: left;
+	width: 30%;
+	height: 200px;
+	overflow: hidden;
+}
+
+/*HEADERS*/
+
+h1 {
+     font:20pt;
+     font-family: var(--font1);
+     font-weight: bold;
+     color:var(--h1);
+     text-transform:uppercase;
+     text-decoration: underline;
+     text-align: center;
+     letter-spacing:1pt;
+}
+
+h2 {
+     font:15pt;
+     font-family: var(--font1);
+     font-weight: bold;
+     color:var(--h2);
+     text-transform:uppercase;
+     text-decoration: underline;
+     text-align: center;
+     letter-spacing:1pt;
+}
+/*PARAGRAPHS*/
+
+p {
+    font:10pt;
+    color: var(--text)!important;
+    text-align: center;
+
+}
+
+p.text {font:10pt;
+    color: var(--text);
+    text-align: center;
+}
+
+p.warning {
+    font-weight: bold;
+    text-transform:uppercase;
+    color: var(--danger)!important;
+    background-color: var(--warning);
+    font-size: 14pt;
+}
+
+/*######## SCROLLBAR ########*/
+
+::-webkit-scrollbar {
+	width: 10px;
+	height: 0px;
+	border-radius: 10px;
+	overflow: hidden !important;
+}
+::-webkit-scrollbar-track {
+	background: var(--scrolltrack);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--scrollthumb);
+}
+
+/* ## ------------------------------------------------------- NAVBAR MAIN ------------------------------------------------------- ## */
+
+.navbar-main .nav-link /* Individual navigation links: 'Den, Crossroads, etc.' */ {
+    color: var(--nav-main) !important;
+    transition:.5s ease;
+}
+.navbar-main .nav-link:hover /* Hover of the links above */ {
+    color: var(--nav-main-hover) !important;
+    text-decoration: double underline overline !important;
+}
+
+#header .navbar-main .nav-link .fa /* Paw Icon, etc. of Den, etc. */ {
+    color: var(--icon);
+    transition:.5s ease;
+}
+#header .navbar-main .nav-link:hover .fa /* Hover of the Icons above */ {
+    color: var(--icon-hover);
+}
+
+.navbar-status /* Status bar containing the currencies, "Welcome back", etc. */ {
+    background: var(--nav-status) !important;
+    border-top: var(--border-dash) !important;
+    border-bottom: var(--border-dash) !important;
+    border-left: var(--border);
+    border-right: var(--border);
+    color: var(--navstat-text) !important;
+}
+
+.btn-group-vertical>.btn, .btn-group>.btn /* Username in that bar */ {
+    background: transparent !important;
+    color: var(--user) !important;  
+    border: transparent;
+}
+
+.dropdown-menu, .dropdown-item{
+    background: var(--dropdown-bg)!important;
+}
+
+.navbar-status a /* Currency, Messages, etc. links */ {
+    color: var(--navstat) !important;
+}
+#header .navbar-status a:hover /* Hover of Currency, Messages, etc. links */ {
+    color: var(--navstat-hover) !important;
+    text-decoration: underline !important;
+}
+
+
+/* ########## BREADCRUMB BAR ########## */
+
+.breadcrumb-item+.breadcrumb-item:before /* The slash between breadcrumb bar links */ {
+    color: var(--breadcrumb);
+}
+
+.breadcrumb-item.active /* Pack Name in breadcrumb bar */ {
+    color: var(--breadcrumb-active);
+    font-weight:bold;
+}
+
+.breadcrumb::after /* CSS Layout Credit */ {
+    content:'CSS by Sabueso #3306';
+    position:absolute;
+    right:35px;
+    color: var(--breadcrumb);
+}
+
+/* ## ------------------------------------------------------- SIDEBAR ------------------------------------------------------- ## */
+
+#header .navbar-main, .breadcrumb-nav, .table th /* 2nd Background for many tables */ {
+    background-color: var(--nav-bg) !important;
+    border-left: var(--border);
+    border-right: var(--border);
+}
+
+.breadcrumb-nav {border-bottom: var(--border);}
+
+#sidebar/* 2nd Background for many tables */ {
+    background: linear-gradient(to bottom, var(--sidebar-bg), transparent) !important;
+    border-left: var(--border);
+}
+
+#sidebar .card /* "Card" sections of the sidebar */ {
+    background: var(--sidebar-card-bg);
+    border-radius: 0px;
+    border: var(--border3);
+    margin-top: 10px;
+}
+
+#sidebar h3 /* Card headers */ {
+    font-family: var(--font2);
+    font-size: 30px;
+    margin-bottom: 5px;
+    margin-top: -5px;
+    border-bottom: var(--border-dash2) !important;
+    color:var(--sidebar-h3);
+    background: var(--sidebar-card-bg);
+}
+
+#sidebar h4 /* Card headers */ {
+    font-family: var(--font2);
+    font-size: 24px;
+    text-decoration: underline;
+    color:var(--sidebar-h4);
+    margin-bottom: 5px;
+    margin-top: -5px;
+}
+
+
+#sidebar #card-user h3 /* Section with the Lead Name in Sidebar */ {
+    margin: -15px;
+}
+div.d-flex.justify-content-between.mb-3 /* Small section with lead and featured wolf icon in Sidebar */ {
+    marin-top: -5px;
+}
+
+.card-body .w-50:first-child div /* Border featured wolf in Sidebar */ {
+border: none !important;
+}
+
+.w-50 > a img /* Wolf Icon Sidebar */ {
+    border-radius: 50% 50% 10px 50%;
+    transition:.5s ease;
+    border: var(--border3);
+}
+.w-50 div a img /* Featured Wolf Icon Sidebar */ {
+    border-radius: 10px;
+    transition:.5s ease;
+    border: var(--border3);
+}
+
+/*---Chat Box---*/
+
+#chatMessagePinned.s-chat-message__pinned {background: var(--chat-bg1) url(//static.wolvden.com/images/layout/chat/sticky.png) no-repeat 10px 6px!important;
+border-bottom-color: var(--border2)!important;
+color: var(--chat-text) !important;
+    font-family: var(--font2);font-size:12px;
+     line-height:22px !important;}
+
+span.s-chat-message_content a {color: var(--chat-link) !important;
+    font-family: var(--font2); font-weight:bold;font-size:10px;
+}
+
+span.s-chat-message_content a:hover {color: var(--chat-link-hover) !important;
+    font-family: var(--font2);font-size:12px;
+}
+
+#chatMessageContainer {border: var(--border4)}
+.s-chat-sidebar .s-chat-message {background-color: var(--chat-bg2) !important;font-size:10px;}
+.s-chat-message:nth-child(odd){background-color: var(--chat-bg3) !important;font-size:10px;} 
+a.s-chat__username {color: var(--chat-user) !important; font-family: var(--font2); font-weight:bold;font-size:10px;
+}
+a.s-chat__username:hover {color: var(--chat-user-hover) !important; font-family: var(--font2); font-weight:bold;font-size:12px;
+}
+span.s-chat-message_content {color: var(--chat-text) !important; font-family: var(--font2);font-size:10px;
+
+} span.s-chat-message_timestamp {
+    color: var(--chat-time) !important; font-family: var(--font2); font-weight:bold;font-size:8px;
+
+}#chatMessageList::-webkit-scrollbar-thumb {
+    background-color: var(--scrollthumb) !important;
+    border-radius: 0px;
+    border: 1px solid var(--border3) !important;
+} #chatMessageList::-webkit-scrollbar-track {
+    border-radius: 0px !important;
+    background-color: var(--scrolltrack) !important;
+}
+button#label_currentChannel{background-color: var(--main-bg) !important; color: var(--chat-text) !important; border: var(--border2) !important; }
+input#txtChatInput{background-color: var(--main-bg) !important; color: var(--chat-text) !important; border: var(--border2) !important; }
+
+div.s-chat-error_screen{background-color: var(--main-bg)!important;}
+div.s-chat-error_screen p{color: var(--danger) !important; font-family: var(--font2);}
+div.s-chat-error_screen s-chat-message__pinned{background: var(--text) !important;}
+
+/* ## ------------------------------------------------------- MAIN PAGE ------------------------------------------------------- ## */
+
+#main /* Section containing the site's main content. */ {
+    background: linear-gradient(to bottom, var(--main-bg2), transparent) !important;
+    border-right: var(--border);
+}
+
+#main h1 /* Pack Name Title */ {
+    background: var(--main-bg) !important;
+    background-repeat: no-repeat !important;
+    background-size: contain, contain, cover !important;
+    color: var(--main-h1) !important;
+    font-weight:600;
+    font-family: var(--font1);
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform:none;
+    text-decoration: none;
+    border: var(--border-h1) !important;
+    font-size: 75px;
+    margin-top: -10px;
+    text-shadow: 0px -2px 4px var(--text-shadow3), 0px -2px 10px var(--text-shadow4) !important;
+}
+
+#main h1:hover /* Pack Name Title */ {
+    letter-spacing: 2px;
+    font-size: 85px;
+    font-style: italic;
+    text-shadow: 0px -2px 4px var(--text-shadow1), 0px -2px 10px var(--text-shadow2), 0px -10px 20px var(--text-shadow3), 0px -20px 40px var(--text-shadow4) !important;
+}
+
+.nav-tabs {
+    border:none;
+} 
+
+.nav-tabs .nav-item {
+    width:49.5%;
+    overflow:hidden;
+} 
+
+.nav-tabs .nav-item:first-of-type {
+    margin-right:0%;
+    border-radius: 0px;
+    border: var(--border3);
+} 
+
+.nav-tabs .nav-item:nth-of-type(2) {
+    border-radius: 0px;
+    border: var(--border3);
+} 
+
+.nav-tabs .nav-link{
+    background:var(--navtab)!important;
+    color: var(--navtab-text);
+    font-family: var(--font2);
+    border:none;
+    text-align:center;
+    font-weight:300!important;
+} 
+
+.nav-tabs .nav-link.active{
+    background:var(--navtab-active)!important;
+    color: var(--navtab-text-active);
+    font-family: var(--font2);
+    border:none;
+    text-align:center;
+    font-weight:300!important;
+} 
+
+.nav-tabs .nav-link.active {
+    min-height:20px!important;
+}
+
+.nav-tabs:hover .nav-link:hover {
+    background:var(--navtab-hover)!important;
+    color: var(--navtab-text-hover);
+    font-family: var(--font2);
+    border:none;
+    text-align:center;
+    font-weight:300!important;
+} 
+/* ## ------------------------------------------------------- USER & FRIEND INFORMATION TABLES ------------------------------------------------------- ## */
+
+.table /* Tables containing User and Friend information. */ {
+    background: var(--table-bg1);
+    border: var(--border);
+    color: var(--table-text);
+    font-weight: bold;
+}
+
+.table th /* 'Member Information, Recent Friends' text */ {
+    color: var(--table-text);
+}
+.table th a:hover /* 'View All' text in Friend table */ {
+    color: var(--link2-hover) !important;
+}
+
+.table th a /* 'View All' text in Friend table */ {
+    color: var(--link2) !important;
+}
+
+.table td /* 'Member Information, Recent Friends' text */ {
+    color: var(--table-text);
+}
+.table td a /* 'View All' text in Friend table */ {
+    color: var(--link2) !important;
+}
+
+.table td a:hover /* 'View All' text in Friend table */ {
+    color: var(--link2-hover) !important;
+}
+
+tr:nth-of-type(odd) /* Individual 'Stripes' of User Information */ {
+    background: var(--table-bg2) !important;
+    color: var(--table-text) !important; 
+}
+
+.border-none .card-img-top, .table .form-row img /* Friend Icons */ {
+    border-radius: 50%;
+    border: var(--border2);
+}
+
+
+.table .bottom, .table tfoot td /* Message, Send gift, etc. */ {
+    background-color: var(--table-bg2);
+}
+
+.left {background: var(--table-bg1) !important;}
+
+
+/* ## ------------------------------------------------------- PROGRESS BARS FOR HUNGER, ETC. ------------------------------------------------------- ## */
+
+.progress /* Progress bars when empty */ {
+    background-color: var(--progressbg) !important;
+    border-radius: 10px;
+    border: 1px solid var(--progressborder);
+}
+.bg-warning, .bg-success /* ENERGY bars */ {
+    background-color: var(--progress1) !important;
+}
+#sidebar .bg-danger, .bg-primary  /* HUNGER bars */ {
+    background-color: var(--progress2) !important;
+}
+#sidebar .bg-info, .bg-danger /* HP bars */ {
+    background-color: var(--progress3) !important;
+}
+#sidebar .bg-success, .bg-info /* EXP bars */ {
+    background-color: var(--progress4) !important;
+}
+
+
+/* ## ------------------------------------------------------- BOTTOM EDITOR ------------------------------------------------------- ## */
+
+.p-2 /* Change PW, Manage devices, etc. */ {
+    background-color: var(--btn);
+    color: var(--btn-text);
+}
+
+.form-control /* Age ascending, etc. menu. Don't fiddle with it too much */ {
+    margin-top: 10px;
+    background: var(--main-bg) !important;
+    border: none;
+    color: var(--text) !important;
+}
+
+input.form-control.form-control-sm /* Member Name, E-Mail address, etc. inputs */ {
+    border: none;
+    font-weight: bold !important;
+    background-color: var(--main-bg) !important;
+    color: var(--text) !important;
+}
+
+
+select.form-control.form-control-sm /* Friend Requests, Cave Display, etc. inputs. */ {
+    border: none;
+    font-weight: bold !important;
+    background-color: var(--main-bg) !important;
+    color: var(--text) !important;
+}
+
+
+.bg-bar-input.pt-1.pl-1.pr-1 { 
+    background-color: var(--sidebar-bg) !important;
+    color: var(--text) !important;
+    border: var(--border) !imporant;}
+
+/* Text Background and Text of Editor */ .note-editor .note-airframe .note-editing-area .note-editable, .note-editor .note-frame .note-editing-area .note-editable {
+    background-color: var(--main-bg) !important;
+    color: var(--text);
+    border: var(--border) !important;
+}
+
+/* Drag Bar below Text Field in Editor */ .note-editor .note-airframe .note-statusbar .note-resizebar, .note-editor .note-frame .note-statusbar .note-resizebar {
+    background: var(--main-bg);
+    border: var(--border) !important;
+}
+
+/* Drag icon in that small bar */ .note-editor .note-airframe .note-statusbar .note-resizebar .note-icon-bar, .note-editor .note-frame .note-statusbar .note-resizebar .note-icon-bar {
+    background-color: var(--pink) !important;
+    border: var(--border2) !important;
+    border-top: var(--border-dash) !important;
+}
+
+.card.bg-light.border /* Turn off animations, etc. table at the bottom */ {
+    border: var(--border) !important;
+    background-color: var(--sidebar-bg) !important;
+    color: var(--text) !important;
+}
+
+
+/* ## ------------------------------------------------------- FOOTER ------------------------------------------------------- ## */
+
+#footer /* Copyright content at the page bottom // Don't mess with it too much */ {
+    background: var(--main-bg) !important;
+    color: var(--text);
+    border: var(--border);
+}
+
+#footer a /* Links in that Footer */ {
+    color: var(--link2) !important;
+}
+
+#footer a:hover /* Hover of the above */ {
+    color: var(--link2-hover) !important;
+}
+
+#footer nav .nav-item .nav-link /* Terms of Service, etc. links */ {
+    color: var(--link2) !important;
+}  
+
+#footer nav .nav-item .nav-link:hover /* Hover of the above */ {
+    color: var(--link2-hover) !important;}   
